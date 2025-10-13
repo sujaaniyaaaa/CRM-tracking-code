@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS CRM Shop - Enquiry</title>
+  <script
+src='//in.fw-cdn.com/31437603/703219.js'
+chat='true'>
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-700 font-sans">
+  <!-- Header -->
+  <header class="bg-pink-200 p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-700">🌸 FS CRM Shop</h1>
+    <nav>
+      <a href="index.html" class="mx-2 hover:underline">Home</a>
+      <a href="products.html" class="mx-2 hover:underline">Products</a>
+      <a href="enquiry.html" class="mx-2 hover:underline">Enquiry</a>
+    </nav>
+  </header>
+
+  <!-- Product Enquiry Form -->
+<section class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-6 mt-12">
+  <h3 class="text-2xl font-semibold text-center text-pink-600 mb-4">Product Enquiry</h3>
+  <form name="enquiryForm" action="/submit-enquiry" method="post" class="space-y-4">
+    
+    <input type="text" name="name" placeholder="Your Name" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <input type="email" name="email" placeholder="Your Email" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <input type="text" name="product" placeholder="Product Name / ID" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <textarea name="details" placeholder="Tell us more about your requirement" rows="5" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+    
+    <button type="submit" 
+      class="w-full bg-pink-500 text-white py-2 rounded-xl hover:bg-pink-600">
+      Submit Enquiry
+    </button>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-center p-4 mt-12">
+    <p class="text-sm text-pink-800">© 2025 FS CRM Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
